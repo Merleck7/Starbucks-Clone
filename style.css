@@ -86,8 +86,6 @@ main section{
     display: flex;
     align-items: center;
     width: 80%;
-    justify-content: space-between;
-
 }
 
 main section img{
