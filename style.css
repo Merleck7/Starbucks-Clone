@@ -61,6 +61,10 @@ header button{
     height: 25px;
     border-radius: 25px;
 }
+header button:hover{
+    opacity: 65%;
+    
+}
 .bwhite {
     background-color: white;
 }
