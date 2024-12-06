@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'SoDo Sans'; /* Nombre que usarás para referirte a la fuente */
+    src: url('./fonts/SoDoSans-Regular.ttf') format('truetype'); /* Ruta y formato del archivo */
+}
+
 *{
     Margin:0;
     Padding:0;
+    font-family: 'SoDo Sans';
     }
+
 header {
     background-color: rgb(255, 255, 255);
     width: 100vw;
@@ -11,16 +18,19 @@ header {
     position: fixed;
     justify-content: space-around;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-}
-body{
-    background-color: rgb(255, 255, 255);
+    font-family: 'SoDo Sans', sans-serif;
 }
 
-.hl  img{
+body{  
+    background-color: #fff;
+}
+
+.hl img{
     width: 40px;
     height: 40px;
 }
 .hl{
+    font-weight: bold;
     display: flex;
     align-items: center;
     list-style: none;
@@ -55,15 +65,15 @@ body{
     text-decoration: none;
 
 }
-header button{
+button{
     border: solid 1px;
     width: 100px;
     height: 25px;
     border-radius: 25px;
 }
-header button:hover{
-    opacity: 65%;
-    
+button:hover{
+    opacity: 65%;  
+    cursor: pointer; 
 }
 .bwhite {
     background-color: white;
@@ -72,6 +82,7 @@ header button:hover{
     background-color: black;
     color: white;
 }
+/*----------------Advertisement Section--------------------*/
 main{
     display: flex;
     justify-content: center;
@@ -85,9 +96,8 @@ main{
 main section{
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 90%;
 }
-
 main section img{
     width: 50%;
 }
@@ -100,7 +110,15 @@ main section img{
     gap: 30px;
     padding: 7%;
 }
-
+.advertisement2 div{
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 50%; 
+    gap: 30px;
+    padding: 7%;
+}
 #style1{
     background-color: #1e3932 ;
 }
@@ -110,19 +128,47 @@ main section img{
 #style3{
     background-color: #d50032 ;
 }
-.advertisement button{
-    border: solid 1px;
-    width: 100px;
-    height: 25px;
-    border-radius: 25px;
+.buttonAD{
     background-color: transparent;
 }
-.advertisement button:hover{
-    opacity: 65%;
+
+/*---------------------News Section-----------------------*/
+.News{
+    gap: 30px;
 }
+.News img{
+    width: 100%;
+}
+.News div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+#Nstyle1{
+    background-color: #f6bfd9;
+    color: #d50032;
+}
+
+#Nstyle2{
+    background-color: #98cde4;
+    color: #003b49;
+}
+.Nlf{
+    background-color: transparent;
+    border-color: #d50032;
+    color: #d50032;
+}
+.Nrg{
+    background-color: transparent;
+    border-color: #003b49;
+    color: #003b49;
+}
+/*-------------------footer section-----------------------*/
 footer {
-    background-color: #d50032;
-    color: #ddd;
+    background-color: #fff;
+    color: #a19996;
     padding: 50px 20px 50px 20px;
     display: flex;
     flex-direction: column;
@@ -146,24 +192,25 @@ footer {
 
 .footer-section h3 {
     font-size: 16px;
-    color: #fff;
+    color: black;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 
 .footer-section a {
     text-decoration: none;
-    color: #ddd;
+    color: #a19996;
     font-size: 14px;
 }
 
 .footer-section a:hover {
-    color: #fff;
+    color: black;
 }
 
 .divider {
     width: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: #a19996;
     margin: 10px 0;
 }
 
@@ -174,21 +221,20 @@ footer {
 }
 
 .social-icons a {
-    width: 30px;
-    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
-    color: #a3002f;
     border-radius: 50%;
-    font-size: 16px;
-    text-decoration: none;
 }
-
+.social-icons img{
+    width: 30px;
+    height: 30px;
+}
 .social-icons a:hover {
     background-color: #ddd;
     color: #a3002f;
+    transform: translateY(-3px);
+    opacity: 70%;
 }
 
 .footer-links {
@@ -200,14 +246,18 @@ footer {
 
 .footer-links a {
     text-decoration: none;
-    color: #ddd;
+    color: #a19996;
 }
 
 .footer-links a:hover {
-    color: #fff;
+    color: black;
 }
 
 .footer-bottom {
     text-align: center;
     font-size: 12px;
+    color: #a19996;
+}
+.footer-bottom p{
+    font-size: 9px;
 }
