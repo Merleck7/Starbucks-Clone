@@ -95,6 +95,7 @@ main section img{
     text-align: center;
     display: flex;
     flex-direction: column; 
+    align-items: center;
     width: 50%; 
     gap: 30px;
     padding: 7%;
@@ -108,6 +109,16 @@ main section img{
 }
 #style3{
     background-color: #d50032 ;
+}
+.advertisement button{
+    border: solid 1px;
+    width: 100px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: transparent;
+}
+.advertisement button:hover{
+    opacity: 65%;
 }
 footer {
     background-color: #d50032;
