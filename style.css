@@ -20,7 +20,9 @@ header {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     font-family: 'SoDo Sans', sans-serif;
 }
-
+    .MenuH{
+        display: none;
+    }
 body{  
     background-color: #fff;
 }
@@ -97,10 +99,12 @@ main section{
     display: flex;
     align-items: center;
     width: 90%;
+    
 }
 main section img{
     width: 50%;
 }
+
 .advertisement div{
     text-align: center;
     display: flex;
@@ -118,6 +122,9 @@ main section img{
     width: 50%; 
     gap: 30px;
     padding: 7%;
+}
+.buttonAD{
+    color: #fff;
 }
 #style1{
     background-color: #1e3932 ;
@@ -254,10 +261,57 @@ footer {
 }
 
 .footer-bottom {
-    text-align: center;
+    text-align: start;
     font-size: 12px;
     color: #a19996;
 }
 .footer-bottom p{
     font-size: 9px;
+}
+/*------------------Media section--------------------*/
+@media (max-width: 768px) {
+    header {
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        height: 70px;
+        display: flex;  
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+    header h1, header .hl ul, .hr{
+        display: none;
+    }
+    .MenuH{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        padding-right: 40px;
+        opacity: 50%;
+    }
+    .MenuH:hover{
+        background-color: gray;
+        opacity: 70%;
+    }
+
+    main section img , main section div{
+        display: flex;
+        width: 100%; /* Las imágenes y textos ocuparán el 100% del contenedor en pantallas pequeñas */
+    }
+    main section {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+    }
+    .advertisement2{
+        flex-direction: column-reverse;
+    }
+    .footer-links{
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .social-icons{
+        align-self: flex-start;
+    }
+    
+
 }
