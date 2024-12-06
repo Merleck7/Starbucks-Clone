@@ -93,7 +93,7 @@ main section{
 main section img{
     width: 50%;
 }
-.cuadros div{
+.advertisement div{
     text-align: center;
     display: flex;
     flex-direction: column; 
@@ -102,13 +102,13 @@ main section img{
     padding: 7%;
 }
 
-#cuadro1{
+#style1{
     background-color: #1e3932 ;
 }
-#cuadro2{
+#style2{
     background-color: #0044b4 ;
 }
-#cuadro3{
+#style3{
     background-color: #d50032 ;
 }
 footer {
