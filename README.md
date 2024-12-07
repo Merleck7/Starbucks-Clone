@@ -1,0 +1,1 @@
+En esta ocasión hice un clon simple de la pagina de "Starbucks" en donde se usa "position: fixed;" para el header de la pagina, aproveche también para darle un uso a "display:flex;" y hacerla responsiva.
