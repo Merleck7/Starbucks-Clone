@@ -10,7 +10,7 @@
     }
 
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.95);
     width: 100vw;
     height: 70px;
     color: black; 
@@ -19,6 +19,7 @@ header {
     justify-content: space-around;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     font-family: 'SoDo Sans', sans-serif;
+    align-items: center;
 }
     .MenuH{
         display: none;
@@ -67,6 +68,9 @@ body{
     text-decoration: none;
 
 }
+.hr ul:hover{
+    opacity: 65%;
+}
 button{
     border: solid 1px;
     width: 100px;
@@ -84,6 +88,25 @@ button:hover{
     background-color: black;
     color: white;
 }
+.underline-effect {
+    position: relative;
+}
+.underline-effect::after {
+    content: '';
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: green;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .underline-effect:hover::after {
+    width: 100%;
+    height: 5px;
+  }
+
 /*----------------Advertisement Section--------------------*/
 main{
     display: flex;
@@ -280,19 +303,19 @@ footer {
         align-items: center;
         padding-left: 20px;
     }
-    header h1, header .hl ul, .hr{
+     header .hl ul, .hr{
         display: none;
     }
     .MenuH{
         display: flex;
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
         padding-right: 40px;
-        opacity: 50%;
+        opacity: 45%;
     }
     .MenuH:hover{
-        background-color: gray;
-        opacity: 70%;
+        transform:scale(1.1);
+        opacity: 25%;
     }
 
     main section img , main section div{
