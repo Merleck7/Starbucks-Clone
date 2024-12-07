@@ -294,7 +294,7 @@ footer {
 /*------------------Media section--------------------*/
 @media (max-width: 768px) {
     header {
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.95);
         width: 100vw;
         height: 70px;
         display: flex;  
